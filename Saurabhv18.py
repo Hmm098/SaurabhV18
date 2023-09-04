@@ -251,12 +251,12 @@ class SaurabhV18:
 
     
     def menu(self):
-        os.system(f"cls & title x444 Nuker ^| Authenticated as: {__client__.user.name}#{__client__.user.discriminator}")
+        os.system(f"cls & title Cj Saurabh Nuker ^| Authenticated as: {__client__.user.name}#{__client__.user.discriminator}")
         print(x444_art + options + "\n")
-        ans = input("{}({}x444{}) Option{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")) 
+        ans = input("{}({}SaurabhV18{}) Option{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")) 
         
         if ans in ["1", "01"]:
-            scrape = input("{}({}x444{}) Fetch IDs [Y/N]{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+            scrape = input("{}({}SaurabhV18{}) Fetch IDs [Y/N]{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             if scrape.lower() == "y":
                 try:
                     guild = __client__.get_guild(int(guildid))
@@ -275,7 +275,7 @@ class SaurabhV18:
                     t.join()
                     
             time.sleep(3)
-            print("{}({}x444{}) Banned {}/{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.banned), len(members)))
+            print("{}({}SaurabhV18{}) Banned {}/{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.banned), len(members)))
             time.sleep(1.5)
             self.menu()
             
@@ -289,18 +289,18 @@ class SaurabhV18:
                     t.join()
             
             time.sleep(3)
-            print("{}({}x444{}) Kicked {}/{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.kicked), len(members)))
+            print("{}({}SaurabhV18{}) Kicked {}/{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.kicked), len(members)))
             time.sleep(1.5)
             self.menu()
             
         elif ans in ["3", "03"]:
-            days = int(input("{}({}x444{}) Days{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")))
+            days = int(input("{}({}SaurabhV18{}) Days{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")))
             self.execute_prune(guildid, days, token)
             time.sleep(1.5)
             self.menu()
             
         elif ans in ["4", "04"]:
-            type = input("{}({}x444{}) Channels Type ['t', 'v']{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+            type = input("{}({}SaurabhV18{}) Channels Type ['t', 'v']{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             type = 2 if type == "v" else 0
             amount = int(input("{}({}x444{}) Amount{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")))
             self.channels.clear()
