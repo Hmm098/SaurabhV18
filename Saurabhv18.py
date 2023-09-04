@@ -1,30 +1,10 @@
 """
-MIT License
-
-Copyright (c) 2022 speezy
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
+SaurabhV18
 """
 
 import threading, webbrowser, discord, random, httpx, json, time, os; from discord.ext import commands;from itertools import cycle
 
-VERSION = '1.0.0'
+VERSION = '3.0.0'
 
 __intents__ = discord.Intents.default()
 __intents__.members = True
@@ -32,13 +12,15 @@ __proxies__, __client__, __config__, __threads__= cycle(open("proxies.txt", "r")
 token = __config__["token"]
 os.system("cls") if os.name == "nt" else os.system("clear")
 
-x444_art = """
-                                          {}__ __  __ __  __ __
-                                    {}_  __/ // / / // / / // /
-                                   {}| |/_/ // /_/ // /_/ // /_
-                                  {}_>  </__  __/__  __/__  __/
-                                  {}/_/|_|  /_/    /_/    /_/{}
-                               *annihilating faggs is our weapon*
+SaurabhV18_art = """
+{}███████╗ █████╗ ██╗   ██╗██████╗  █████╗ ██████╗ ██╗  ██╗    ██╗   ██╗ ██╗ █████╗ 
+{}██╔════╝██╔══██╗██║   ██║██╔══██╗██╔══██╗██╔══██╗██║  ██║    ██║   ██║███║██╔══██╗
+{}███████╗███████║██║   ██║██████╔╝███████║██████╔╝███████║    ██║   ██║╚██║╚█████╔╝
+{}╚════██║██╔══██║██║   ██║██╔══██╗██╔══██║██╔══██╗██╔══██║    ╚██╗ ██╔╝ ██║██╔══██╗
+{}███████║██║  ██║╚██████╔╝██║  ██║██║  ██║██████╔╝██║  ██║     ╚████╔╝  ██║╚█████╔╝
+{}╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝      ╚═══╝   ╚═╝ ╚════╝ 
+                                                                                  
+                                       Rich Saurabh On Top!!
                               ═══════════════════════════════════         
                          ═════════════════════════════════════════════
 """.format("\x1b[38;5;17m", "\x1b[38;5;18m", "\x1b[38;5;19m", "\x1b[38;5;20m", "\x1b[38;5;21m", "\x1b[0m")
@@ -57,7 +39,7 @@ options = """
            "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")
 
 
-class x444:
+class SaurabhV18:
     def __init__(self):
         self.proxy = "http://" + next(__proxies__) if __config__["proxy"] == True else None
         self.session = httpx.Client(proxies=self.proxy)
