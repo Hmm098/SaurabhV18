@@ -2,7 +2,7 @@
 SaurabhV18
 """
 
-import threading, webbrowser, discord, random, httpx, json, time, os; from discord.ext import commands;from itertools import cycle
+import threading, webbrowser, discord, random, https, json, time, os; from discord.ext import commands;from itertools import cycle
 
 VERSION = '3.0.0'
 
