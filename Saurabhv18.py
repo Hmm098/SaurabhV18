@@ -4,7 +4,7 @@ SaurabhV18
 
 import threading, webbrowser, discord, random, httpx, json, time, os; from discord.ext import commands;from itertools import cycle
 
-VERSION = '3.0.0'
+VERSION = '1.0.0'
 
 __intents__ = discord.Intents.default()
 __intents__.members = True
@@ -410,14 +410,14 @@ class SaurabhV18:
             self.menu()
         
         elif ans == "12":
-            print("{}({}x444{}) Thanks for using x444!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+            print("{}({}SaurabhV18{}) Thanks for using x444!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             time.sleep(1.5)
             os._exit(0)
             
     
 @__client__.event
 async def on_ready():
-    print("{}({}x444{}) Authenticated as{}: {}{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", f"{__client__.user.name}#{__client__.user.discriminator}"))
+    print("{}({}SaurabhV18{}) Authenticated as{}: {}{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", f"{__client__.user.name}#{__client__.user.discriminator}"))
     time.sleep(1.5)
     x444().menu()
     
